@@ -8,25 +8,12 @@ public class PrintArray {
         PrintArray.toPrint(charArray);
 
     }
-    public static void toPrint(Integer[] inputArray){
-        for(int element : inputArray){
-            System.out.println(element);
-        }
-        System.out.println();
-    }
+   public static <E> void toPrint(E[] inputarray){
+       for(E element : inputarray){
+           System.out.println(element);
+       }
+       System.out.println();
+   }
 
-    public static void toPrint(Double[] inputArray){
-        for(double element : inputArray){
-            System.out.println(element);
-        }
-        System.out.println();
 
-    }
-
-    public static void toPrint(Character[] inputArray){
-        for(char element : inputArray){
-            System.out.println(element);
-        }
-        System.out.println();
-    }
 }
