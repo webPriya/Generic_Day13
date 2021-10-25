@@ -1,8 +1,8 @@
 package com.bdlz.findMax;
 
 public class FindMaximum {
-    public static String maximum(String firstValue, String secValue, String thirdValue){
-        String maximumNum = firstValue;
+    public static <E extends Comparable> E maximum(E firstValue, E secValue, E thirdValue){
+        E maximumNum = firstValue;
         if(secValue.compareTo(maximumNum) > 0)
             maximumNum = secValue ;
         if (thirdValue.compareTo(maximumNum) > 0)
