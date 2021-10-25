@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class FindMaximumTest {
     @Test
     public void findMaximum_atFirstPosition() {
-    int actualResult = FindMaximum.maximum(3,6,1);
+    int actualResult = FindMaximum.maximum(3,1,6);
         Assert.assertEquals(6,actualResult);
     }
 
