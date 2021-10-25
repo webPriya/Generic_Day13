@@ -1,6 +1,14 @@
 package com.bdlz.findMax;
 
-public class FindMaximum {
+public class FindMaximum<E extends Comparable> {
+    E firstValue;
+    E secValue;
+    E thirdValue;
+    public FindMaximum(E firstValue, E secValue, E thirdValue) {
+        this.firstValue = firstValue;
+        this.secValue = secValue;
+        this.thirdValue = thirdValue;
+    }
     public static <E extends Comparable> E maximum(E firstValue, E secValue, E thirdValue){
         E maximumNum = firstValue;
         if(secValue.compareTo(maximumNum) > 0)
